@@ -193,7 +193,7 @@ var granimInstance = new Granim({
 # 3 自定义背景主题
 - 将网站字体修改为`lxgwwenkai-regular`
 - 修改导航栏、主列表、说明栏等背景为透明玻璃风格
-- 修改背景为自定义图片
+- 修改背景为自定义图片（演示为原神茜特菈莉）
 - 去除原有底部字体，引入一言API提供一句话服务
 
 <img width="4561" height="1336" alt="image" src="https://github.com/user-attachments/assets/944b8430-ebea-498b-9c3a-466ead4939e9" />
