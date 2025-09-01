@@ -1,0 +1,49 @@
+<div id="customize" style="display: none; visibility: hidden;"> <center class="dibu">
+        <div style=" line-height: 20px;font-size: 9pt;font-weight: bold;">
+            <span>
+                <span style="font-weight: bold;" id="hitokoto">
+                    <a href="#" id="hitokoto_text">
+                        "Loading..."
+                    </a>
+                </span>
+            </span>
+            <p style="margin-left: 10rem;font-size: 8pt;">
+                <small>
+                    —— Tom2077
+                </small>
+            </p>
+        </div>
+    </center>
+
+    <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+</div>
+
+<script>
+    const customContent = document.querySelector("#customize");
+    const footer = customContent.querySelector(".dibu");
+
+    // This function aligns the footer to the main content box
+    function alignFooter() {
+        const objBox = document.querySelector(".obj-box");
+        if (objBox && footer) {
+            const rect = objBox.getBoundingClientRect();
+            footer.style.width = rect.width + 'px';
+            footer.style.left = rect.left + 'px';
+            customContent.style.visibility = "visible"; // Make it visible after positioning
+        }
+    }
+
+    // Run alignment logic when the page is ready
+    let interval = setInterval(() => {
+        if (document.querySelector(".obj-box")) {
+            document.body.appendChild(customContent);
+            customContent.style.display = "";
+            alignFooter();
+            clearInterval(interval);
+        }
+    }, 200);
+
+    // Re-align the footer whenever the window is resized
+    window.addEventListener('resize', alignFooter);
+
+</script>

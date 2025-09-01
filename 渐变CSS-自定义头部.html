@@ -1,0 +1,122 @@
+<script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=String.prototype.replaceAll"></script>
+<link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-webfont@1.1.0/lxgwwenkai-regular.css" />
+<style>
+/* 去除通知栏 右上角 X */
+ .notify-render .hope-close-button {
+    display: none;
+}
+
+/*主列表白天模式透明*/
+ .obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-igScBhH-css {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
+/*主列表夜间模式透明*/
+ .obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-iigjoxS-css {
+    background-color:rgb(0 0 0 / 50%) !important;
+}
+/*readme白天模式透明*/
+ .hope-c-PJLV.hope-c-PJLV-ikSuVsl-css {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
+/*readme夜间模式透明*/
+ .hope-c-PJLV.hope-c-PJLV-iiuDLME-css {
+    background-color:rgb(0 0 0 / 50%) !important;
+}
+/*顶部右上角切换按钮透明*/
+ .hope-ui-light .hope-c-ivMHWx-hZistB-cv.hope-icon-button {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
+.hope-ui-dark .hope-c-ivMHWx-hZistB-cv.hope-icon-button {
+    background-color:rgb(0 0 0 / 50%) !important;
+}
+/*右下角侧边栏按钮透明 第一个是白天 第二个是夜间*/
+ .hope-ui-light .hope-c-PJLV-ijgzmFG-css {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
+.hope-ui-dark .hope-c-PJLV-ijgzmFG-css {
+    background-color:rgb(0 0 0 / 50%) !important;
+}
+/*白天模式代码块透明*/
+ .hope-ui-light pre {
+    background-color: rgba(255, 255, 255, 0.1)!important;
+}
+/*夜间模式代码块透明*/
+ .hope-ui-dark pre {
+    background-color: rgba(255, 255, 255, 0)!important;
+}
+/*左侧侧边栏目录*/
+/*白天模式*/
+ .hope-ui-light .hope-c-PJLV-ieGWMbI-css {
+    background: rgba(255, 255, 255, 0.5) !important;
+}
+/*夜间模式*/
+ .hope-ui-dark .hope-c-PJLV-ieGWMbI-css {
+    background-color:rgb(0 0 0 / 50%) !important;
+}
+/* 返回顶部 */
+ .hope-c-PJLV-ihVEsOa-css {
+    background: rgba(255, 255, 255, 0.5) !important;
+}
+.hope-ui-dark .hope-c-PJLV-ihVEsOa-css {
+    background-color:rgb(0 0 0 / 50%) !important;
+}
+
+/* --- MODIFIED --- 导航条完全透明 --- */
+.hope-c-PJLV-ikaMhsQ-css, 
+.hope-c-PJLV-icWrYmg-css,
+.hope-ui-light .hope-c-PJLV-idaeksS-css,
+.hope-ui-dark .hope-c-PJLV-idaeksS-css {
+    background: transparent !important;
+}
+
+
+/* --- 修复代码开始 --- */
+
+/* 1. 将整个应用容器设置为 Flexbox 布局 */
+.App {
+    display: flex;
+    flex-direction: column; /* 设置主轴为垂直方向 */
+    min-height: 100vh;     /* 确保应用容器至少占满整个屏幕的高度 */
+}
+
+/* 2. 让主内容区域自动伸展，填满所有可用空间 */
+/* 这样当内容不足时，就会把下方的 .dibu "推" 到屏幕底部 */
+.obj-box {
+    flex-grow: 1;
+}
+
+/* 3. 移除 .dibu 的 fixed 定位，让它回归正常的文档流 */
+.dibu {
+    text-align: center;      /* 文本居中 */
+    padding-bottom: 20px;    /* 底部留出 20px 间距，看起来更美观 */
+    line-height: 20px;
+    font-size: 9pt;
+    font-weight: bold;
+}
+
+/* --- 修复代码结束 --- */
+
+.table {
+    margin: auto;
+}
+/*去掉底部*/
+.footer {
+    display: none !important;
+}
+/*全局字体*/
+*{font-family:LXGW WenKai}
+*{font-weight:bold}
+body {font-family: LXGW WenKai;}
+ /*渐变背景CSS*/
+  #canvas-basic {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -999;
+  }
+</style>
