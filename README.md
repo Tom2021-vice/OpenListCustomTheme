@@ -9,6 +9,9 @@ OpenList v4.1.1
 - 修改主列表、说明栏等背景为透明玻璃风格
 - 修改背景为CSS渐变
 - 去除原有底部字体，引入一言API提供一句话服务
+
+<img width="4579" height="1329" alt="image" src="https://github.com/user-attachments/assets/e38969c0-adf7-4d20-a4b7-1900da5151c7" />
+
 ## 2.1 自定义头部代码
 ```html
 <script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=String.prototype.replaceAll"></script>
@@ -192,6 +195,11 @@ var granimInstance = new Granim({
 - 修改导航栏、主列表、说明栏等背景为透明玻璃风格
 - 修改背景为自定义图片
 - 去除原有底部字体，引入一言API提供一句话服务
+
+<img width="4561" height="1336" alt="image" src="https://github.com/user-attachments/assets/944b8430-ebea-498b-9c3a-466ead4939e9" />
+
+>记得将白天背景图和夜间背景图中`background-image: url("https://www.example.com") !important;`的`https://www.example.com`换成自己喜欢的背景
+
 ## 3.1 自定义头部代码
 ```html
 <script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=String.prototype.replaceAll"></script>
@@ -230,7 +238,7 @@ body {
 
 .hope-ui-light::before {
     content: ''; 
-    background-image: url("https://openlist.2002521.xyz/d/BWG%40BIGGERBOX/%E5%A3%81%E7%BA%B8/%E5%8E%9F%E7%A5%9E_%E8%8C%9C%E7%89%B9%E8%8F%88%E8%8E%89/citlali-genshin-impact-4k-wallpaper-uhdpaper.com-481%405%40b.jpg?sign=HAICMxq_Ah8MA5FwsOM4Yk1IvdE37Ey6Mu0uFL5dCJI=:0") !important;
+    background-image: url("https://www.example.com") !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -253,7 +261,7 @@ body {
 
 .hope-ui-dark::before {
     content: '';
-    background-image: url("https://openlist.2002521.xyz/d/BWG%40BIGGERBOX/%E5%A3%81%E7%BA%B8/%E5%8E%9F%E7%A5%9E_%E8%8C%9C%E7%89%B9%E8%8F%88%E8%8E%89/citlali-genshin-impact-4k-wallpaper-uhdpaper.com-196%405%40b.jpg?sign=Tueh9iVdqBTg3jlZogepmh3KIcRJ7KYMWr_gSkw_V-o=:0") !important;
+    background-image: url("https://www.example.com") !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
